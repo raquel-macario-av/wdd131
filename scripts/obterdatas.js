@@ -17,3 +17,4 @@ if (pRodape) {
 
     pRodape.textContent = `Última Modificação: ${dataFormatada} ${horaFormatada}`;
 }
+ggg
