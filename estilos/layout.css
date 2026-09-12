@@ -1,0 +1,104 @@
+/* --- 1. Reset Básico --- */
+/* Remove margens e paddings padrão do navegador para começar do zero */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Essencial para o cálculo correto do tamanho das caixas */
+}
+
+body {
+    font-family: sans-serif;
+    /* Uma fonte limpa */
+    display: flex;
+    flex-direction: column;
+    /* Empilha os elementos principais verticalmente */
+    min-height: 100vh;
+    /* Garante que o body ocupe pelo menos a altura da tela */
+}
+
+/* --- 2. Estilos do Header (Barra Cinza Escuro) --- */
+header {
+    background-color: #333;
+    /* Cinza escuro */
+    color: white;
+    height: 100px;
+    /* Altura definida */
+    display: flex;
+    justify-content: left;
+    /* Centraliza o título */
+    align-items: center;
+    /* Adicione o recuo interno (padding) para afastar da borda esquerda */
+    padding-left: 30px;
+        /* Aumente ou diminua este valor conforme necessário */
+}
+
+/* --- Estilos do Menu Principal (Barra Preta) --- */
+.menu-principal {
+    background-color: black;
+    /* Fundo preto */
+    color: white;
+    /* Texto branco */
+    height: 60px;
+    /* Altura do menu */
+
+    /* --- ADICIONE ESTAS TRÊS LINHAS AQUI --- */
+    display: flex;
+    /* Transforma o nav num contêiner flex */
+    justify-content: space-around;
+    /* Espalha os links uniformemente pelo espaço */
+    align-items: center;
+    /* Centraliza os links verticalmente no meio da barra */
+}
+
+.menu-principal a {
+    text-decoration: none;
+    /* Remove o sublinhado padrão dos links */
+    color: inherit;
+    /* Garante que os links usem a cor branca do pai */
+    cursor: pointer;
+    /* Muda o cursor para "mãozinha" ao passar o mouse */
+
+    /* Opcional: Adicione um pouco de padding lateral para garantir 
+       que os textos não fiquem colados nem quando a tela for pequena */
+    padding: 0 10px;
+}
+
+/* --- 4. Container para Main e Aside (Para ficarem lado a lado) --- */
+.container-conteudo {
+    display: flex;
+    /* Configura os filhos (main e aside) para ficarem em linha */
+    flex: 1;
+    /* Faz este contêiner ocupar todo o espaço vertical restante */
+}
+
+/* --- 5. Estilos do Main (Cinza Claro) --- */
+main {
+    background-color: #ccc;
+    /* Cinza claro */
+    flex: 3;
+    /* Ocupa 3 partes do espaço disponível */
+    padding: 20px;
+}
+
+/* --- 6. Estilos do Aside (Branco) --- */
+aside {
+    background-color: white;
+    flex: 1;
+    /* Ocupa 1 parte do espaço disponível */
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    /* Borda opcional para separar do main */
+}
+
+/* --- 7. Estilos do Footer (Barra Cinza Escuro) --- */
+footer {
+    background-color: #333;
+    /* Cinza escuro */
+    color: white;
+    height: 80px;
+    /* Altura definida */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
