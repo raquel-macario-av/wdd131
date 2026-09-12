@@ -55,7 +55,7 @@ nav ul li:last-child{
 }
 
 nav a{
-    text-decoration: none;
+    text-decoration: #333;
     color: white;
     padding: 10px 15px;
     display: block;
@@ -109,14 +109,14 @@ section h3 {
 
 }
 
-section.sobre-mim img[alt="Foto de Raquel Macario"]{
+section.card img[alt="Foto de Raquel Macario"]{
 float: right;
 margin-left: 15px;
 margin-bottom: 15px;
 border: 1px solid #999;
 
 }
-section.sobre-mim  img[alt="Foto da Bandeira de Alagoas"] {
+section.card  img[alt="Foto da Bandeira de Alagoas"] {
     float:left ;
     margin-right: 20px;
     margin-left: 3px;
