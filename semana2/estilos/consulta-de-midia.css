@@ -1,11 +1,30 @@
-@media screen and (min-width: 500px) {
-    header {
-        background-color: black;
-        color: white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-    }
+}
 
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
+body {
+    font-family: "Roboto", sans-serif;
+
+    background-color: white;
+}
+
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid gray;
+    padding: 2rem;
+    background-color: #e6f2ff;
+}
+
+section {
+    margin: 1.5rem 0;
+    /* 1.5rem em cima/baixo e 0 nas laterais */
+    padding: 20px solid e6f2ff;
+    background-color: white;
+
 }
