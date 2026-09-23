@@ -71,24 +71,24 @@ main {
     padding: 20px;
 }
 
-.galeria-templo {
+.galeria-templos {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
     margin-top: 20px;
 }
 
-.galeria-templo figure {
+.galeria-templos figure {
     margin: 0;
 }
 
-.galeria-templo img {
+.galeria-templos img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.galeria-templo figcaption {
+.galeria-templos figcaption {
     padding: 5px;
     font-size: 0.9rem;
 }
