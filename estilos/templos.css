@@ -63,7 +63,9 @@ header h1 {
 .navigation a:hover {
     text-decoration: underline;
 }
-
+nav{
+    display: inline-flex;
+}
 main {
     max-width: 800px;
     margin: 0 auto;
