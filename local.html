@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brasil | WDD 131</title>
+
+    <meta name="description" content="Página sobre o Brasil desenvolvida para a atividade WDD 131.">
+    <meta name="author" content="Raquel Macario">
+
+    <link rel="stylesheet" href="estilos/local.css">
+    <script src="scripts/local.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Brasil</h1>
+    </header>
+
+    <main>
+
+        <div class="hero-container">
+
+            <picture>
+                <source media="(min-width: 800px)" srcset="./imagens/a-arara-azul.webp">
+        
+                <img src="./imagens/a-arara-azul.webp" alt="Arara azul no Brasil" class="hero-image">
+            </picture>
+
+
+            <section class="info-box data">
+                <h2>Dados</h2>
+            
+                <p><strong>Área:</strong> 8.515.767 km²</p>
+                <p><strong>População:</strong> 203.062.512</p>
+                <p><strong>Capital:</strong> Brasília</p>
+                <p><strong>Idiomas:</strong> Português</p>
+                <p><strong>Moeda:</strong> Real brasileiro</p>
+                <p><strong>Fuso horário:</strong> UTC-3</p>
+                <p><strong>Código de discagem:</strong> +55</p>
+                <p><strong>Internet TLD:</strong> .br</p>
+            </section>
+            
+            <section class="info-box clima">
+                <h2>Clima</h2>
+            
+                <img src="./imagens/weather.svg" alt="Ícone de clima parcialmente nublado" class="clima-icon">
+            
+                <p><span>Temperatura:</span> <span id="temperatura">10</span> °C</p>
+                
+                <p><span>Condições:</span> Parcialmente nublado</p>
+                
+                <p><span>Vento:</span> <span id="vento">5</span> km/h</p>
+                
+                <p><span>Sensação térmica:</span>
+                    <span id="sensacao-termica"></span>
+                </p>
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © <span id="anoatual"></span>
+            🌺 Raquel Macario 🌺 Alagoas
+        </p>
+
+        <p id="ultimaModificacao"></p>
+
+    </footer>
+
+</body>
+
+</html>
