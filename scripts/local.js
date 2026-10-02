@@ -1,29 +1,20 @@
 
-// =========================
-// ANO ATUAL
-// =========================
 
 document.querySelector("#anoatual").textContent =
     new Date().getFullYear();
 
 
-// =========================
-// ÚLTIMA MODIFICAÇÃO
-// =========================
+
 
 document.querySelector("#ultimaModificacao").textContent =
     `Última Modificação: ${document.lastModified}`;
 
 
-// =========================
-// SENSÃO TÉRMICA
-// =========================
+
 
 function calculateWindChill(temperature, windSpeed) {
 
-    // A sensação térmica só é calculada
-    // quando temperatura <= 10°C
-    // e vento > 4.8 km/h
+   h
 
     if (temperature <= 10 && windSpeed > 4.8) {
 
@@ -44,17 +35,13 @@ function calculateWindChill(temperature, windSpeed) {
 }
 
 
-// =========================
-// DADOS DO CLIMA
-// =========================
+
 
 const temperature = 25;
 const windSpeed = 10;
 
 
-// =========================
-// MOSTRA SENSAÇÃO TÉRMICA
-// =========================
+
 
 document.querySelector("#windchill").textContent =
     calculateWindChill(temperature, windSpeed);

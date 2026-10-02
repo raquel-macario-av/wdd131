@@ -21,9 +21,7 @@ body {
 }
 
 
-/* =========================
-   CABEÇALHO
-========================= */
+
 
 header {
     background-color: var(--cor-verde);
@@ -40,9 +38,6 @@ header h1 {
 }
 
 
-/* =========================
-   ÁREA PRINCIPAL
-========================= */
 
 main {
     width: 100%;
@@ -55,9 +50,7 @@ main {
 }
 
 
-/* =========================
-   IMAGEM
-========================= */
+
 
 .hero-image {
     display: block;
@@ -65,10 +58,6 @@ main {
     height: auto;
 }
 
-
-/* =========================
-   CAIXAS DE INFORMAÇÃO
-========================= */
 
 .data,
 .clima {
@@ -99,11 +88,7 @@ main {
 }
 
 
-/* =========================
-   ÍCONE DO CLIMA
-========================= */
 
-/* No desktop será usado o emoji */
 
 .clima h2::after {
     content: " ⛅";
@@ -111,19 +96,17 @@ main {
 }
 
 
-/* O SVG fica escondido no desktop */
+
 
 .clima-icon {
     display: none;
 }
 
 
-/* =========================
-   RODAPÉ
-========================= */
+
 
 footer {
-    background-color: var(--cor-verde);
+    background-color: var(--cor-azul);
     color: var(--cor-branca);
     text-align: center;
     padding: 1rem;
@@ -136,9 +119,6 @@ footer p {
 }
 
 
-/* ==================================================
-   DESKTOP
-================================================== */
 
 @media screen and (min-width: 800px) {
 
@@ -154,7 +134,7 @@ footer p {
     }
 
 
-    /* DATA SOBRE A IMAGEM */
+
 
     .data {
         position: absolute;
@@ -166,7 +146,7 @@ footer p {
     }
 
 
-    /* WEATHER SOBRE A IMAGEM */
+   
 
     .clima {
         position: absolute;
@@ -185,9 +165,7 @@ footer p {
 }
 
 
-/* ==================================================
-   MOBILE
-================================================== */
+
 
 @media screen and (max-width: 799px) {
 
@@ -208,10 +186,7 @@ footer p {
     }
 
 
-    /*
-       No celular as caixas NÃO ficam
-       sobre a imagem.
-    */
+  
 
     .data,
     .clima {
@@ -232,19 +207,14 @@ footer p {
     }
 
 
-    /*
-       No celular o emoji desaparece.
-    */
+  
 
     .clima h2::after {
         content: none;
     }
 
 
-    /*
-       No celular aparece o SVG.
-    */
-
+   
     .clima-icon {
         display: block;
 
